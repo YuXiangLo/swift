@@ -59,7 +59,7 @@ class GameState: ObservableObject {
                 noughtScore += 1
             }
             let winner = turn == Tile.Cross ? "Cross" : "Nought"
-            alertMessage = "winner is " + winner
+            alertMessage = "Winner is " + winner
             showAlert = true
         } else if (checkDraw()){
             alertMessage = "Draw!"
